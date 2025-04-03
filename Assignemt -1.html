@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-image img {
+            width: 100%;
+            border-bottom: 3px solid #ddd;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            padding: 20px;
+        }
+
+        .profile-info h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .profile-card {
+                width: 100%;
+                margin: 20px;
+            }
+
+            .profile-image img {
+                height: 150px;
+            }
+
+            .profile-info h2 {
+                font-size: 20px;
+            }
+
+            .profile-info p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="profile-image">
+        <img src="image01.jpeg" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+        <h2>John Doe</h2>
+        <p>Web Developer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis erat at ex.</p>
+        <div class="social-icons">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
